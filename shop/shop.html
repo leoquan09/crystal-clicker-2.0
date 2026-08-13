@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>crystal shop!</title>
+    <title>Crystal Clicker - Shop</title>
+    <link rel="stylesheet" href="shop.css">
 </head>
 <body>
-    
+    <div class="shop-container">
+        <!-- Shop Header -->
+        <header class="shop-header">
+            <h1>Crystal Shop</h1>
+            <div class="score-display">
+                Crystals: <span id="crystal-count">0</span>
+            </div>
+        </header>
+
+        <div class="shop-items">
+            <div class="item-card">
+                <div class="item-info">
+                    <h3>Auto-Miner</h3>
+                    <p>Generates 1 crystal per second.</p>
+                    <p class="cost">Cost: 15 crystals</p>
+                </div>
+                <button class="pixel-art buy-btn" id="buy-miner">Buy</button>
+            </div>
+
+            <div class="item-card">
+                <div class="item-info">
+                    <h3>Super Pickaxe</h3>
+                    <p>Doubles crystals per click.</p>
+                    <p class="cost">Cost: 50 crystals</p>
+                </div>
+                <button class="pixel-art buy-btn" id="buy-pickaxe">Buy</button>
+            </div>
+        </div>
+
+        <footer class="shop-footer">
+            <a href="../index.html" class="pixel-art back-btn">Back to Game</a>
+        </footer>
+    </div>
 </body>
 </html>
