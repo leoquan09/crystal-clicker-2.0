@@ -2,7 +2,8 @@ const crystal = document.getElementById('crystal-img');
 const scoreText = document.getElementById('crystal-count');
 const title = document.querySelector('.game-title');
 
-let score = parseInt(localStorage.getItem('scores')) || 0; 
+let savedScore = parseInt(localStorage.getItem('scores')); 
+let score = isNaN(savedScore) ? 0 : savedScore;
 scoreText.textContent = score;
 
 crystal.addEventListener('click', () => { 
