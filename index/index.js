@@ -6,7 +6,6 @@ let score = parseInt(localStorage.getItem('scores'));
 scoreText.textContent = score;
 
 crystal.addEventListener('click', () => { 
-  
   score += 1; 
   localStorage.setItem('scores', score); 
   scoreText.textContent = score; 
