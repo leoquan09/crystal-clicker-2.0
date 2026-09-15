@@ -1,4 +1,3 @@
-alert('PLEASEEE');
 import { upgrade1, upgrade2 } from '../shop/shop.js';
 import { gamestate } from '../localStorage/score.js';
 
@@ -26,7 +25,6 @@ function upgradeLoop() {
 setInterval(upgradeLoop, 1000);
 
 crystal.addEventListener('click', () => { 
-  alert("Hi")
   gamestate.score += 1; 
   saveScores()
   updateScoreUI();
